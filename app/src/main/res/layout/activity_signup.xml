@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+<LinearLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,25 +14,52 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.stephany.morzan.botafogo.SignupActivity">
+    tools:context="com.stephany.morzan.botafogo.SignupActivity"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu nombre"/>
+
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de usuario"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué te gusta o agrada (verbos o sustantivos)?"/>
+
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="¿Qué no te gusta o desagrada (verbos o sustantivos)?"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
 
-    <TextView
+    <Button
+        android:id="@+id/but_signup"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
+    </ScrollView>
