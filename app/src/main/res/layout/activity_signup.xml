@@ -24,17 +24,29 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Nombre"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre de usuario"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contraseña"/>
+        android:text="Contraseña (solo letras y números)"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Contraseña (mínimo 6 caracteres)"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,9 +62,9 @@
         android:layout_height="wrap_content"
         android:text="¿Qué no te gusta o desagrada (verbos o sustantivos)?"/>
 
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/but_signup"
